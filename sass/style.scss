@@ -5,12 +5,13 @@
 }
 
 $color-main: #ff5e57;
+$color-light: #fff;
 
 body {
     margin: 0;
     text-align: center;
     background: #fff;
-    color: #3d3d3d;
+    color: $color-light;
     font-size: 16px;
     line-height: 1.7;
 }
@@ -27,3 +28,31 @@ section {
 }
 
 /* Splash */
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/6568406/pexels-photo-6568406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    //background-image: url('https://images.pexels.com/photos/6748957/pexels-photo-6748957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center center;
+    background-size: cover;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.7px 0.1px gray;
+}
+
+.splash i {
+    font-size: 30px;
+    background-color: #3d3d3d;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-light;
+    border-radius: 50%;
+}
